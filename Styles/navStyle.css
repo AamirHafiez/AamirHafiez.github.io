@@ -190,6 +190,24 @@ body{
 }
 #nav-bell-icon i:hover{
 	color: gold;
+	animation: ring;
+	animation-duration: 0.2s;
+	animation-timing-function: linear;
+	animation-iteration-count: 3;
+}
+@keyframes ring{
+	0%{
+		transform: rotate(-15deg);
+	}
+	25%{
+		transform: rotate(15deg);
+	}
+	50%{
+		transform: rotate(-15deg);
+	}
+	100%{
+		transform: rotate(15deg);
+	}
 }
 
 /*####### ----default as hidden for tags before media---- #########*/
