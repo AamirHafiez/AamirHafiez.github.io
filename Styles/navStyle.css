@@ -69,6 +69,31 @@ body{
 	color: lightgrey;
 	font-family: sans-serif;
 }
+#logo:hover > a i{
+	animation-name: changeLogoCol;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+@keyframes changeLogoCol{
+	0%{
+		color: #1B3649;
+	}
+	20%{
+		color: #D4FF47;
+	}
+	40%{
+		color: #FF2FB9;
+	}
+	60%{
+		color: #7B1DAF;
+	}
+	80%{
+		color: #0FC0FC;
+	}
+	100%{
+		color: #01FF70;
+	}
+}
 
 /*nav-favourites*/
 #nav-favourites{
@@ -367,6 +392,6 @@ main{
 		left: 0;
 		height: 80%;
 	}
-	
+
 }
 
