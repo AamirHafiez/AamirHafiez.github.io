@@ -1,0 +1,372 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #003542;
+}
+
+/*#################----NAVBAR----##############*/
+
+/*nav-bar*/
+#nav-bar{
+	display: flex;
+	background-color: #001f3f;
+	position: fixed;
+	width: 100vw;
+	height: 70px;
+	justify-content: space-between;
+	box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.3);
+	z-index: 4;
+}
+
+/*nav-left*/
+#nav-left{
+	display: flex;
+	/*############################*/
+	/*background-color: red;*/
+	width: 50%;
+}
+
+/*nav-right*/
+#nav-right{
+	display: flex;
+	justify-content: space-around;
+	/*background-color: blue;*/
+	width: 50%;
+}
+
+/*everything at center*/
+.center-down{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*logo*/
+#logo a{
+	text-decoration: none;
+	display: flex;
+}
+
+#logo a i{
+	font-size: 3.2rem;
+	color: #01FF70;
+	margin-top: 5px;
+	margin-left: 15%;
+}
+#logo-title{
+	margin-left: 5px;
+}
+#ninja-p {
+	font-size: 2rem;
+	color: grey;
+}
+#studio-p{
+	font-size: 1.5rem;
+	color: lightgrey;
+	font-family: sans-serif;
+}
+
+/*nav-favourites*/
+#nav-favourites{
+	margin-left: 15%;
+	/*background-color: grey;*/
+	cursor: pointer;
+	padding: 0 10px;
+}
+#nav-favourites a{
+	text-decoration: none;
+}
+#nav-favourites a p{
+	color: lightgrey;
+	font-size: 1.5rem;
+}
+#nav-favourites:hover{
+	background-color: grey;
+}
+#nav-favourites:hover > a p{
+	color: white;
+}
+
+/*profile photo*/
+#profile-photo div{
+	height: 50px;
+	width: 50px;
+	background-image: url('../Static/ProfilePhoto/profile.jpg');
+	background-size: cover;
+	border-radius: 50%;
+	box-shadow: 0 0 7px 5px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+#profile-photo div:hover{
+	box-shadow: inset 0 0 7px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/*nav-search*/
+#nav-search{
+	/*background-color: grey;*/
+}
+#search-elements{
+	background-color: #DD4124;
+	border: solid black 1px;
+	font-size: 1.5rem;
+	padding: 10px 15px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-around;
+	overflow: hidden;
+	cursor: pointer;
+	position: fixed;
+	box-shadow: inset 0 0 7px 3px rgba(0, 0, 0, 0.5);
+	width: 50px;
+	transition: width 2s;
+}
+#search-elements i{
+	color: white;
+	transition: color 1s linear;
+}
+#search-elements input{
+	max-width: 0;
+	visibility: hidden;
+	padding: 6px 0;
+	transition: all 2s;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-size: 15px;
+}
+#search-elements input::placeholder{
+	color: lightgrey;
+}
+#nav-search:hover > #search-elements input{
+	max-width: 100%;
+	visibility: visible;
+}
+#nav-search:hover > #search-elements i{
+	color: darkblue;
+}
+#nav-search:hover > #search-elements{
+	width: 15%;
+}
+
+/*bell icon*/
+#nav-bell-icon{
+	margin-left: 20%;
+}
+#nav-bell-icon i{
+	font-size: 1.8rem;
+	color: white;
+	cursor: pointer;
+}
+#nav-bell-icon i:hover{
+	color: gold;
+}
+
+/*####### ----default as hidden for tags before media---- #########*/
+
+/*menubutton*/
+#menu-button{
+	display: none;
+	/*background-color: grey;*/
+	width: 20%;
+}
+#menu-button input{
+	display: none;
+}
+#menu-button label{
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#menu-button label i{
+	font-size: 2rem;
+	color: lightgrey;
+}
+#menu-button input:checked ~ label i{
+	color: black;
+}
+#menu-button input:checked ~ label{
+	background-color: lightgrey;
+}
+
+/*menu button items*/
+#menu-button-items{
+	position: fixed;
+	height: 100vh;
+	max-width: 0;
+	width: 100vw;
+	top: 70px;
+	overflow: hidden;
+	background-color: #001f3f;
+	transition: all 0.4s;
+	/*background-color: #009B77;*/
+}
+
+#menu-button input:checked ~ #menu-button-items{
+	max-width: 100%;
+}
+
+/*menu buttons items search*/
+#search-media{
+	/*background-color: red;*/
+	display: flex;
+}
+#search-media input{
+	display: block;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	border-bottom: 1px solid lightgrey;
+	font-size: 20px;
+	margin-left: 6%;
+	color: white;
+}
+#search-media input::placeholder{
+	color: lightgrey;
+}
+#search-media i{
+	cursor: pointer;
+	color: white;
+	font-size: 28px;
+}
+#search-media i:hover{
+	color: yellow;
+}
+
+/*add top margin to all the media items*/
+.add-margin{
+	margin-top: 5%;
+}
+
+/*****************>>>>>>>MAIN SECTION<<<<<<<*****************/
+main{
+	width: 70vw;
+}
+/*###########-----------Carousal------------#######*/
+#carousel{
+	height: 70vh;
+	width: 100%;
+	/*background-color: grey;*/
+}
+#carousel-container{
+	height: 70%;
+	width: 80%;
+	/*background-color: black;*/
+	position: relative;
+	top: 100px;
+	left: 10%;
+}
+
+#carousel-image1{
+	height: 90%;
+	width: 70%;
+	background-image: url('../Static/CarouselImages/i1.jpg');
+	background-size: cover;
+	position: absolute;
+	z-index: 0;
+	overflow: hidden;
+	transform: scale(0.8);
+	opacity: 0.5;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+#carousel-image2{
+	height: 90%;
+	width: 70%;
+	/*background-color: green;*/
+	background-image: url('../Static/CarouselImages/i2.jpg');
+	background-size: cover;
+	position: absolute;
+	left: 15%;
+	z-index: 1;
+	overflow: hidden;
+	cursor: pointer;
+	transition: transform 10s;
+	transition: all 0.3s;
+	
+}
+
+#carousel-image3{
+	height: 90%;
+	width: 70%;
+	/*background-color: blue;*/
+	background-image: url('../Static/CarouselImages/i3.jpg');
+	background-size: cover;
+	position: absolute;
+	z-index: 0;
+	left: 30%;
+	overflow: hidden;
+	opacity: 0.5;
+	cursor: pointer;
+	transform: scale(0.8);
+	transition: all 0.3s;
+}
+
+.carousal-box-shadow{
+	box-shadow: 6px 6px 18px 7px rgba(0, 0, 0, 0.5);
+}
+
+#carousel-image2:hover{
+	transform: scale(1.1);
+}
+#carousel-image1:hover{
+	z-index: 2;
+	opacity: 1;
+	transform: scale(1.1);
+}
+#carousel-image3:hover{
+	z-index: 2;
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+
+
+/*media queries*/
+@media screen and (max-width: 740px){
+	/*for nav*/
+	.hide{
+		display: none;
+	}
+	#menu-button{
+		display: flex;
+	}
+	#nav-left{
+		width: 80%;
+	}
+	#nav-right{
+		/*background-color: red;*/
+		padding-right: 20px;
+		width: 20%;
+	}
+	#logo, #nav-favourites, #nav-bell-icon{
+		position: relative;
+		left: -10%;
+	}
+
+	/*for carousal*/
+	#carousel-container{
+		display: flex;
+		height: 150px;
+		/*background-color: grey;*/
+		width: 80vw;
+	}
+	#carousel-container div{
+		position: relative;
+		opacity: 1;
+		left: 0;
+		height: 80%;
+	}
+	
+}
+
