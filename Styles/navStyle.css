@@ -190,6 +190,8 @@ body{
 }
 #nav-bell-icon i:hover{
 	color: gold;
+}
+.bell-ring i:hover{
 	animation: ring;
 	animation-duration: 0.2s;
 	animation-timing-function: linear;
