@@ -453,7 +453,7 @@ aside section{
 
 /**********tabs left*************/
 .song-tab-left{
-	width: 90%;
+	width: 85%;
 	height: 100%;
 	/*background-color: yellow;*/
 	display: flex;
@@ -493,7 +493,7 @@ aside section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	box-shadow: 3px 3px 7px 4px rgba(0, 0, 0, 0.3);
+	box-shadow: 2px 2px 15px 1px rgba(87, 250, 233, 0.3);
 	transition: transform 0.5s;
 }
 
