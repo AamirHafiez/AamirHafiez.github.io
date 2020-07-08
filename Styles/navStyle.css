@@ -295,6 +295,8 @@ body{
 /*****************>>>>>>>MAIN SECTION<<<<<<<*****************/
 main{
 	width: 70vw;
+	display: inline-block;
+	/*background-color: black;*/
 }
 /*###########-----------Carousal------------#######*/
 #carousel{
@@ -376,6 +378,339 @@ main{
 }
 
 
+/*##############-----------ASIDE SECTION-----------##############*/
+aside{
+	display: inline-block;
+	position: fixed;
+	top: 90px;
+	/*background-color: grey;*/
+	width: 25vw;
+	height: 73vh;
+}
+aside section{
+	/*background-color: grey;*/
+	height: 100%;
+	width: 100%;
+}
+
+/*aside heading and drop down*/
+#aide-heading{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/*background-color: darkgrey;*/
+}
+#aide-heading p{
+	font-size: 1.8rem;
+	font-family: sans-serif;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+#drop-down{
+	text-align: right;
+}
+#drop-down select{
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-family: cursive;
+	border: none;
+	outline: none;
+	font-size: 1rem;
+	text-align: right;
+	width: auto;
+	background-color: transparent;
+	color: orange;
+	cursor: pointer;
+}
+
+/*content*/
+#aside-content{
+	/*background-color: green;*/
+	height: 92%;
+	overflow: auto;
+}
+
+/*tabs*/
+.tabs{
+	margin-top: 16px;
+	width: 100%;
+	height: 12%;
+	/*background-color: grey;*/
+}
+.tabs input{
+	display: none;
+}
+.song-tabs {
+    display: flex;
+    /*background-color: red;*/
+    width: 95%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+/**********tabs left*************/
+.song-tab-left{
+	width: 90%;
+	height: 100%;
+	/*background-color: yellow;*/
+	display: flex;
+	align-items: center;
+}
+
+/*number and animated icon*/
+.sno i{
+	position: absolute;
+	visibility: hidden;
+	top: 0;
+}
+
+.sno{
+	font-size: 15px;
+	color: lightgrey;
+	font-family: sans-serif;
+	position: relative;
+}
+
+/*artist and song name*/
+.aside-song-name{
+	color: white;
+	font-size: 18px;
+	font-family: cursive;
+}
+.aside-artist{
+	color: #939393;
+}
+
+/*thumbnail*/
+.aside-thumbnail-container{
+	height: 80%;
+	width: 20%;
+	margin:0 15px;
+	/*background-color: grey;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 3px 3px 7px 4px rgba(0, 0, 0, 0.3);
+	transition: transform 0.5s;
+}
+
+.song-tabs:hover > .song-tab-left .aside-thumbnail-container{
+	transform: scale(1.2);
+} 
+#tab1-thumb{
+	height: 100%;
+	width: 100%;
+}
+
+/************tabs right*****************/
+.song-tab-right{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.song-tab-right i{
+	position: absolute;
+}
+.song-tab-right .heart-solid{
+	transform: scale(0.9);
+	color: transparent;
+
+}
+.song-tab-right label{
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+}
+
+.heart-hollow{
+	color: white;
+}
+
+/*Hearts Favourite*/
+#mirage-heart:checked ~ label .heart-solid{
+	color: red;
+	animation: liked 0.3s linear;
+}
+#perfect-heart:checked ~ label .heart-solid{
+	color: red;
+	animation: liked 0.3s linear;
+}
+#slim-heart:checked ~ label .heart-solid{
+	color: red;
+	animation: liked 0.3s linear;
+}
+#raabata-heart:checked ~ label .heart-solid{
+	color: red;
+	animation: liked 0.3s linear;
+}
+#vaaste-heart:checked ~ label .heart-solid{
+	color: red;
+	animation: liked 0.3s linear;
+}
+#shayad-heart:checked ~ label .heart-solid{
+	color: red;
+	animation: liked 0.3s linear;
+}
+#ringtone-heart:checked ~ label .heart-solid{
+	color: red;
+	animation: liked 0.3s linear;
+}
+#aajbhi-heart:checked ~ label .heart-solid{
+	color: red;
+	animation: liked 0.3s linear;
+}
+#loca-heart:checked ~ label .heart-solid{
+	color: red;
+	animation: liked 0.3s linear;
+}
+#asalmein-heart:checked ~ label .heart-solid{
+	color: red;
+	animation: liked 0.3s linear;
+}
+@keyframes liked{
+	0%{
+		transform: scale(5);
+	}
+	100%{
+		transform: scale(0.9);
+	}
+}
+
+
+/*ThumbNails Backgrounds to divs*/
+.mirage-thumb{
+	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-size: cover;
+}
+.perfect-thumb{
+	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-size: cover;
+}
+.slim-thumb{
+	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-size: cover;
+}
+.raabata-thumb{
+	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-size: cover;
+}
+.vaaste-thumb{
+	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-size: cover;
+}
+.shayad-thumb{
+	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-size: cover;
+}
+.ringtone-thumb{
+	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-size: cover;
+}
+.aajbhi-thumb{
+	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-size: cover;
+}
+.loca-thumb{
+	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-size: cover;
+}
+.asalmein-thumb{
+	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-size: cover;
+}
+
+
+
+/*radio song selects*/
+#mirage:checked ~ .song-tabs .song-tab-left .sno i{
+	visibility: visible;
+}
+#mirage:checked ~ .song-tabs .song-tab-left .sno p{
+	visibility: hidden;
+}
+
+#perfect:checked ~ .song-tabs .song-tab-left .sno i{
+	visibility: visible;
+}
+#perfect:checked ~ .song-tabs .song-tab-left .sno p{
+	visibility: hidden;
+}
+
+#slim:checked ~ .song-tabs .song-tab-left .sno i{
+	visibility: visible;
+}
+#slim:checked ~ .song-tabs .song-tab-left .sno p{
+	visibility: hidden;
+}
+
+#raabata:checked ~ .song-tabs .song-tab-left .sno i{
+	visibility: visible;
+}
+#raabata:checked ~ .song-tabs .song-tab-left .sno p{
+	visibility: hidden;
+}
+
+#vaaste:checked ~ .song-tabs .song-tab-left .sno i{
+	visibility: visible;
+}
+#vaaste:checked ~ .song-tabs .song-tab-left .sno p{
+	visibility: hidden;
+}
+
+#shayad:checked ~ .song-tabs .song-tab-left .sno i{
+	visibility: visible;
+}
+#shayad:checked ~ .song-tabs .song-tab-left .sno p{
+	visibility: hidden;
+}
+
+#ringtone:checked ~ .song-tabs .song-tab-left .sno i{
+	visibility: visible;
+}
+#ringtone:checked ~ .song-tabs .song-tab-left .sno p{
+	visibility: hidden;
+}
+
+#aajbhi:checked ~ .song-tabs .song-tab-left .sno i{
+	visibility: visible;
+}
+#aajbhi:checked ~ .song-tabs .song-tab-left .sno p{
+	visibility: hidden;
+}
+
+#loca:checked ~ .song-tabs .song-tab-left .sno i{
+	visibility: visible;
+}
+#loca:checked ~ .song-tabs .song-tab-left .sno p{
+	visibility: hidden;
+}
+
+#asalmein:checked ~ .song-tabs .song-tab-left .sno i{
+	visibility: visible;
+}
+#asalmein:checked ~ .song-tabs .song-tab-left .sno p{
+	visibility: hidden;
+}
+
+/*Aside Content Scrollbar*/
+#aside-content::-webkit-scrollbar{
+	width: 7px;
+	background-color: transparent;
+}
+#aside-content::-webkit-scrollbar-track{
+	background-color: #191919;
+	border-radius: 70px;
+	box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+#aside-content::-webkit-scrollbar-thumb{
+	background-color: grey;
+	border-radius: 70px;
+}
+
 
 /*media queries*/
 @media screen and (max-width: 740px){
@@ -413,5 +748,32 @@ main{
 		height: 80%;
 	}
 
-}
 
+	/*for aside*/
+	aside{
+		display: block;
+		width: 80vw;
+		margin-top: -250px;
+		margin-left: 10%;
+		position: relative;
+		height: auto;
+	}
+	.tabs{
+		display: inline-block;
+		width: 35vw;
+		transform: scale(0.8);
+	}
+	#aside-content{
+		overflow: hidden;
+	}
+	.song-tabs{
+		width: 35vw;
+	}
+	.song-tab-left{
+		display: block;
+	}
+	.aside-thumbnail-container{
+		height: 90px;
+		width: 90px;
+	}
+}
