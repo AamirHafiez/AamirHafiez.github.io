@@ -316,7 +316,7 @@ main{
 #carousel-image1{
 	height: 90%;
 	width: 70%;
-	background-image: url('../Static/CarouselImages/i1.jpg');
+	background-image: url('../Static/CarouselImages/i1.JPG');
 	background-size: cover;
 	position: absolute;
 	z-index: 0;
@@ -331,7 +331,7 @@ main{
 	height: 90%;
 	width: 70%;
 	/*background-color: green;*/
-	background-image: url('../Static/CarouselImages/i2.jpg');
+	background-image: url('../Static/CarouselImages/i2.JPG');
 	background-size: cover;
 	position: absolute;
 	left: 15%;
@@ -347,7 +347,7 @@ main{
 	height: 90%;
 	width: 70%;
 	/*background-color: blue;*/
-	background-image: url('../Static/CarouselImages/i3.jpg');
+	background-image: url('../Static/CarouselImages/i3.JPG');
 	background-size: cover;
 	position: absolute;
 	z-index: 0;
@@ -583,43 +583,43 @@ aside section{
 
 /*ThumbNails Backgrounds to divs*/
 .mirage-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
 	background-size: cover;
 }
 .perfect-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
 	background-size: cover;
 }
 .slim-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
 	background-size: cover;
 }
 .raabata-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
 	background-size: cover;
 }
 .vaaste-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
 	background-size: cover;
 }
 .shayad-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
 	background-size: cover;
 }
 .ringtone-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
 	background-size: cover;
 }
 .aajbhi-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
 	background-size: cover;
 }
 .loca-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
 	background-size: cover;
 }
 .asalmein-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.jpg");
+	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
 	background-size: cover;
 }
 
