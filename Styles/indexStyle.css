@@ -412,7 +412,7 @@ main{
 	box-shadow: 2px 2px 15px 1px rgba(87, 250, 233, 0.3);
 }
 .lr-thumbnail{
-	background-image: url('../static/MainContentThumbnails/image2.JPG');
+	background-image: url('../Static/MainContentThumbnails/image2.JPG');
 	height: 80px;
 	width: 80px;
 	background-size: cover;
@@ -645,43 +645,43 @@ aside section{
 
 /*ThumbNails Backgrounds to divs*/
 .mirage-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
+	background-image: url("../Static/Thumbnails/mirageThumb.JPG");
 	background-size: cover;
 }
 .perfect-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
+	background-image: url("../Static/Thumbnails/mirageThumb.JPG");
 	background-size: cover;
 }
 .slim-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
+	background-image: url("../Static/Thumbnails/mirageThumb.JPG");
 	background-size: cover;
 }
 .raabata-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
+	background-image: url("../Static/Thumbnails/mirageThumb.JPG");
 	background-size: cover;
 }
 .vaaste-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
+	background-image: url("../Static/Thumbnails/mirageThumb.JPG");
 	background-size: cover;
 }
 .shayad-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
+	background-image: url("../Static/Thumbnails/mirageThumb.JPG");
 	background-size: cover;
 }
 .ringtone-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
+	background-image: url("../Static/Thumbnails/mirageThumb.JPG");
 	background-size: cover;
 }
 .aajbhi-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
+	background-image: url("../Static/Thumbnails/mirageThumb.JPG");
 	background-size: cover;
 }
 .loca-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
+	background-image: url("../Static/Thumbnails/mirageThumb.JPG");
 	background-size: cover;
 }
 .asalmein-thumb{
-	background-image: url("../Static/ThumbNails/mirageThumb.JPG");
+	background-image: url("../Static/Thumbnails/mirageThumb.JPG");
 	background-size: cover;
 }
 
