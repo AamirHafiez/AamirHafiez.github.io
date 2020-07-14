@@ -549,6 +549,43 @@ main{
 	background-image: url('../Static/Stations/pop.JPG');
 }
 
+/*>>>>>>>>>Music Types<<<<<<<<<*/
+#music-types-container{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+.mt-img{
+	width: 30%;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	box-shadow: 5px 7px 6px 8px rgba(0, 0, 0, 0.5);
+	background-size: cover;
+}
+.mt-img p{
+	font-size: 1.5rem;
+	color: honeydew;
+	font-family: cursive;
+	letter-spacing: 2px;
+	transition: transform 0.3s;
+}
+.mt-img:hover > p{
+	transform: scale(0.7);
+}
+
+/* music types urls */
+#mt-party{
+	background-image: url('../Static/MusicTypes/party.JPG');
+}
+#mt-electronic{
+	background-image: url('../Static/MusicTypes/electronic.JPG');
+}
+#mt-roadtrip{
+	background-image: url('../Static/MusicTypes/roadtrip.JPG');
+}
 
 /*##############-----------ASIDE SECTION-----------##############*/
 aside{
@@ -935,6 +972,11 @@ aside section{
 	}
 	.st-img p{
 		opacity: 1;
+	}
+
+	/* for music types */
+	.mt-img p{
+		font-size: 0.9rem;
 	}
 
 	/*for aside*/
