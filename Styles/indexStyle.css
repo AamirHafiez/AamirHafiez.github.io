@@ -483,6 +483,73 @@ main{
 	font-family: cursive;
 }
 
+/*>>>>>>>>>Stations<<<<<<<<<*/
+#stations-container{
+	background-color: #101642;
+	margin-right: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 10px 0 10px 10px;
+}
+#stations-logo{
+	width: 150px;
+	height: 100px;
+	margin: 20px 0;
+	background-image: url('../Static/Stations/stationsLogo.JPG');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.st-img{
+	width: 100px;
+	height: 100px;
+	margin: 20px 0;
+	background-color: grey;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background-size: cover;
+	transition: opacity 0.3s;
+}
+.st-img:hover{
+	opacity: 0.5;
+}
+
+.st-img p{
+	font-weight: bold;
+	font-family: cursive;
+	letter-spacing: 2px;
+	color: snow;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.st-img:hover > p{
+	opacity: 1;
+}
+
+/* station images urls */
+#st-love{
+	background-image: url('../Static/Stations/love.JPG');
+}
+#st-retro{
+	background-image: url('../Static/Stations/retro.JPG');
+}
+#st-chill{
+	background-image: url('../Static/Stations/chill.JPG');
+}
+#st-workout{
+	background-image: url('../Static/Stations/workout.JPG');
+}
+#st-rock{
+	background-image: url('../Static/Stations/rock.JPG');
+}
+#st-pop{
+	background-image: url('../Static/Stations/pop.JPG');
+}
+
+
 /*##############-----------ASIDE SECTION-----------##############*/
 aside{
 	display: inline-block;
@@ -862,6 +929,13 @@ aside section{
 		height: 80%;
 	}
 
+	/* for stations */
+	#stations-logo{
+		width: 100%;
+	}
+	.st-img p{
+		opacity: 1;
+	}
 
 	/*for aside*/
 	aside{
