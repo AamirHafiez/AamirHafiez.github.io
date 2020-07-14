@@ -5,7 +5,7 @@
 }
 
 body{
-	background-color: #003542;
+	background-color: #0C1027;
 }
 
 /*#################----NAVBAR----##############*/
@@ -381,17 +381,17 @@ main{
 
 /*###########-------------MAIN SECTION CONTENT--------------#######*/
 
-/*>>>>>>>>>Latest Releases<<<<<<<<<*/
-#latest-releases{
-	/*background-color: grey;*/
-	margin-left: 10%;
-}
-
-#lr-heading h2{
+.div-headings{
 	font-family: sans-serif;
 	letter-spacing: 1.2px;
 	color: #FFFFFF;
 }
+
+.div-margins{
+	margin-left: 10%;
+}
+
+/*>>>>>>>>>Latest Releases<<<<<<<<<*/
 
 .lr-content{
 	display: flex;
@@ -440,6 +440,49 @@ main{
 	color: grey;
 	font-size: 0.7rem;
 }
+
+/*>>>>>>>>>Popular Artists<<<<<<<<<*/
+#popular-artists{
+	margin-top: 5%;
+}
+#popular-artists-content{
+	/* background-color: grey; */
+	margin-top: 2%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.pa{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 8%;
+	cursor: pointer;
+	transition: transform 0.3s;
+}	
+.pa:hover{
+	transform: scale(0.9);
+}
+
+.pa-img{
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	background-image: url('../Static/PopularArtists/edSheeren.JPG');
+	background-size: cover;
+	transition: box-shadow 0.3s;
+}
+.pa:hover > .pa-img{
+	box-shadow: inset 4px 4px 10px 15px rgba(0, 0, 0, 0.3);
+}
+.pa-name p{
+	font-size: 1.1rem;
+	color: #ffffffb0;
+	font-family: cursive;
+}
+
 /*##############-----------ASIDE SECTION-----------##############*/
 aside{
 	display: inline-block;
