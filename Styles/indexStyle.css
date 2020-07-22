@@ -555,15 +555,13 @@ main{
 	display: flex;
 	justify-content: space-around;
 }
-.mt-img{
+.mt-img-container{
 	width: 30%;
 	height: 150px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	cursor: pointer;
 	box-shadow: 5px 7px 6px 8px rgba(0, 0, 0, 0.5);
 	background-size: cover;
+	overflow: hidden;
 }
 .mt-img p{
 	font-size: 1.5rem;
@@ -572,8 +570,19 @@ main{
 	letter-spacing: 2px;
 	transition: transform 0.3s;
 }
-.mt-img:hover > p{
+.mt-img-container:hover > .mt-img p{
 	transform: scale(0.7);
+}
+.mt-img{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: transform 0.3s;
+}
+.mt-img-container:hover > .mt-img{
+	transform: scale(1.2);
 }
 
 /* music types urls */
@@ -586,6 +595,84 @@ main{
 #mt-roadtrip{
 	background-image: url('../Static/MusicTypes/roadtrip.JPG');
 }
+
+
+/*>>>>>>>>>Latest English And Hindi<<<<<<<<<*/
+#latest-english-container{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	/* background-color: grey; */
+}
+
+.le-content{
+	margin-top: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	/* background-color: green; */
+	justify-content: space-around;
+}
+.le-img{
+	height: 120px;
+	width: 120px;
+	background-size: cover;
+	min-width: 80px;
+	min-height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 4px 4px 7px 8px rgba(0, 0, 0, 0.3);
+}
+.le-img i{
+	visibility: hidden;
+	color: silver;
+	transform: scale(2);
+	opacity: 0.8;
+}
+.le-con{
+	cursor: pointer;
+	transition: opacity 0.3s;
+}
+.le-con:hover{
+	opacity: 0.7;
+}
+.le-con:hover > .le-img i{
+	visibility: visible;
+}
+.le-title{
+	margin-top: 10%;
+}
+.le-name{
+	color: rgba(186, 194, 194, 0.986);
+	font-size: 20px;
+	font-family: cursive;
+}
+.le-date{
+	color: rgb(92, 88, 88);
+	font-size: 12px;
+	font-family: sans-serif;
+}
+
+/* Latest Songs urls */
+.le-img-1{
+	background-image: url('../Static/LatestEnglishAndHindi/img1.JPG');
+}
+.le-img-2{
+	background-image: url('../Static/LatestEnglishAndHindi/img2.JPG');
+}
+.le-img-3{
+	background-image: url('../Static/LatestEnglishAndHindi/img3.JPG');
+}
+.le-img-4{
+	background-image: url('../Static/LatestEnglishAndHindi/img4.JPG');
+}
+.le-img-5{
+	background-image: url('../Static/LatestEnglishAndHindi/img5.JPG');
+}
+.le-img-6{
+	background-image: url('../Static/LatestEnglishAndHindi/img6.JPG');
+}
+
 
 /*##############-----------ASIDE SECTION-----------##############*/
 aside{
@@ -977,6 +1064,11 @@ aside section{
 	/* for music types */
 	.mt-img p{
 		font-size: 0.9rem;
+	}
+
+	/* for latest english and hindi */
+	.le-con{
+		margin-bottom: 15px;
 	}
 
 	/*for aside*/
