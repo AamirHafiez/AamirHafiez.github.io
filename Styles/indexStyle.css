@@ -296,6 +296,7 @@ body{
 main{
 	width: 70vw;
 	display: inline-block;
+	margin-bottom: 100px;
 	/*background-color: black;*/
 }
 
@@ -1007,10 +1008,77 @@ aside section{
 	border-radius: 70px;
 }
 
+
+/*******------------------------Footer Audio---------------------*******/
+footer{
+	background-color: #191919;
+	height: 70px;
+	width: 100vw;
+	margin-top: -70px;
+	position: fixed;
+	top:100vh;
+	z-index: 4;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	box-shadow: 0 -4px 7px 5px rgba(0, 0, 0, 0.3);
+}
+.player{
+	outline: none;
+	/* border: white solid 2px; */
+	background-color: #F1F3F4;
+	box-shadow: 3px 3px 7px 8px rgba(0, 0, 0, 0.3);
+}
+.player-title{
+	display: flex;
+	margin-top: 10px;
+}
+.player-title-img{
+	height: 55px;
+	width: 55px;
+	background-image: url('../Static/AudioThumbnails/CanWeKiss4Ever.JPG');
+	background-size: cover;
+	box-shadow: 0 0 5px 6px rgba(0, 0, 0, 0.3);
+}
+.player-title-names{
+	margin-left: 10px;
+}
+.player-title-names marquee{
+	color: rgba(240, 255, 240, 0.767);
+	font-size: 20px;
+	font-family: cursive;
+}
+.player-title-names p{
+	font-family: sans-serif;
+	color: rgb(92, 88, 88);
+	font-size: 15px;
+}
+.player-title-extras input{
+	display: none;
+}
+#pt-heart, #pt-solid-heart{
+	position: absolute;
+	top: 20px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+#pt-heart{
+	transform: scale(1.5);
+}
+#pt-solid-heart{
+	transform: scale(0);
+	color: red;
+	transition: transform 0.3s;
+}
+#kiss-forever:checked ~ label #pt-solid-heart{
+	transform: scale(1.47);
+}
+
 /*media queries*/
 @media screen and (max-width: 740px){
 	main{
 		margin-left: 10%;
+		margin-bottom: 0;
 		/*background-color: grey;*/
 	}
 
@@ -1079,6 +1147,7 @@ aside section{
 		margin-left: 10%;
 		position: relative;
 		height: auto;
+		margin-bottom: 140px;;
 	}
 	.tabs{
 		display: inline-block;
@@ -1097,6 +1166,17 @@ aside section{
 	.aside-thumbnail-container{
 		height: 90px;
 		width: 90px;
+	}
+
+	/* for footer */
+	footer{
+		height: 150px;
+		margin-top: -140px;
+		display: block;
+	}
+	.player-title, .player-container{
+		margin-left: 20%;
+		margin-bottom: 10px;
 	}
 
 }
