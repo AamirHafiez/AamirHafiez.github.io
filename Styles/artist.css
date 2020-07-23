@@ -8,11 +8,6 @@ body{
 	background-color: #0C1027;
 }
 
-/* removing all decorations from a tag */
-a{
-	text-decoration: none;
-}
-
 /*#################----NAVBAR----##############*/
 
 /*nav-bar*/
@@ -297,407 +292,256 @@ a{
 	margin-top: 5%;
 }
 
-/*****************>>>>>>>MAIN SECTION<<<<<<<*****************/
+/* ***************-----------Main------------************* */
 main{
-	width: 70vw;
+    width: 60vw;
 	display: inline-block;
 	margin-bottom: 100px;
-	/*background-color: black;*/
+    margin: 90px 5vw 140px 5vw;
 }
 
-/*###########-----------Carousal------------#######*/
-#carousel{
-	height: 70vh;
-	width: 100%;
-	/*background-color: grey;*/
+/* ****#####---Main Top---######**** */
+#main-top{
+    width: 100%;
+    /* height: 70vh; */
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #141B41;
 }
-#carousel-container{
-	height: 70%;
-	width: 80%;
-	/*background-color: black;*/
-	position: relative;
-	top: 100px;
-	left: 10%;
+.main-top-img{
+    height: 70vh;
+    width: 50%;
+    background-color: black;
+    background-image: url('../Static/PopularArtists/coldplay.JPG');
+    background-size: cover;
+    min-width: 400px;
+    /* display: inline-block; */
 }
-
-#carousel-image1{
-	height: 90%;
-	width: 70%;
-	background-image: url('../Static/CarouselImages/i1.JPG');
-	background-size: cover;
-	position: absolute;
-	z-index: 0;
-	overflow: hidden;
-	transform: scale(0.8);
-	opacity: 0.5;
-	cursor: pointer;
-	transition: transform 0.3s;
+.main-top-content{
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 5%;
+    /* display: inline-block; */
 }
-
-#carousel-image2{
-	height: 90%;
-	width: 70%;
-	/*background-color: green;*/
-	background-image: url('../Static/CarouselImages/i2.JPG');
-	background-size: cover;
-	position: absolute;
-	left: 15%;
-	z-index: 1;
-	overflow: hidden;
-	cursor: pointer;
-	transition: transform 10s;
-	transition: all 0.3s;
-	
+.mt-content-head{
+    display: flex;
+    justify-content: space-between;
 }
-
-#carousel-image3{
-	height: 90%;
-	width: 70%;
-	/*background-color: blue;*/
-	background-image: url('../Static/CarouselImages/i3.JPG');
-	background-size: cover;
-	position: absolute;
-	z-index: 0;
-	left: 30%;
-	overflow: hidden;
-	opacity: 0.5;
-	cursor: pointer;
-	transform: scale(0.8);
-	transition: all 0.3s;
+.mt-artist{
+    font-size: 40px;
+    font-family: sans-serif;
+    color: honeydew;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
-
-.carousal-box-shadow{
-	box-shadow: 6px 6px 18px 7px rgba(0, 0, 0, 0.5);
+.mt-band, .mt-followers, .dummy-text p{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: slategrey;
+    word-spacing: 2px;
 }
-
-#carousel-image2:hover{
-	transform: scale(1.1);
+.mt-followers{
+    margin-top:10px;
 }
-#carousel-image1:hover{
-	z-index: 2;
-	opacity: 1;
-	transform: scale(1.1);
+.dummy-text p{
+    margin-top: 15px;
 }
-#carousel-image3:hover{
-	z-index: 2;
-	opacity: 1;
-	transform: scale(1.1);
+.mt-content-footer{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
 }
-
-
-/*###########-------------MAIN SECTION CONTENT--------------#######*/
-
-.div-headings{
-	font-family: sans-serif;
-	letter-spacing: 1.2px;
-	color: #FFFFFF;
+.foot-left button{
+    width: 150px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-image: linear-gradient(to right,#4127B3 , #B244DA);
+    transition: all 0.3s;
+}
+.foot-left button:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px 4px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to right,#B244DA , #730e97);
+}
+.foot-left p, .foot-right p{
+    color: honeydew;
+    font-family: sans-serif;
+}
+.foot-left p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.foot-right p{
+    cursor: pointer;
+}
+.foot-right p:hover{
+    color: chartreuse; 
 }
 
-.div-margins{
-	margin-left: 10%;
+/* ****#####---Main Bottom---######**** */
+#main-bottom{
+    margin-top: 20px;
+}
+.mb-song-tab{
+    background-color: #1A1E33;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+}
+.mb-song-tab:hover{
+    transform: scale(1.07);
+    box-shadow: 3px 3px 8px 4px rgba(0, 0, 0, 0.3);
+}
+.mb-song-tab li{
+    margin-left: 30px;
+    color: honeydew;
+    font-weight: bold;
+    
+}
+.mb-song-tab li #tab-content{
+    display: flex;
+    justify-content: space-between;
+}
+.mb-img{
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    margin:0 10px;
+    box-shadow: 3px 3px 6px 3px rgb(180,179,175, 0.2);
+}
+.mb-tab-left{
+    margin-top: 5px;
+    display: flex;
+}
+.mb-tab-right{
+    margin-top: 10px;
+    width: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.mb-title p{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+.mb-song{
+    font-size: 23px;
+}
+.mb-artist{
+    font-size: 14px;
+    color: grey;
 }
 
-/*>>>>>>>>>Latest Releases<<<<<<<<<*/
-
-.lr-content{
-	display: flex;
-	flex-wrap: wrap;
+/* main bottom image urls */
+#mb-img1{
+    background-image: url('../Static/LatestEnglishAndHindi/img1.JPG');
 }
-.lr{
-	width: 50%;
-	min-width: 300px;
-	display: flex;
-	margin: 10px 0;
-	cursor: pointer;
-	transition: transform 0.3s;
+#mb-img2{
+    background-image: url('../Static/LatestEnglishAndHindi/img2.JPG');
 }
-.lr:hover{
-	transform: scale(1.08);
+#mb-img3{
+    background-image: url('../Static/LatestEnglishAndHindi/img3.JPG');
 }
-.lr:hover > .lr-thumbnail{
-	box-shadow: 2px 2px 15px 1px rgba(87, 250, 233, 0.3);
+#mb-img4{
+    background-image: url('../Static/LatestEnglishAndHindi/img4.JPG');
 }
-.lr-thumbnail{
-	background-image: url('../Static/MainContentThumbnails/image2.JPG');
-	height: 80px;
-	width: 80px;
-	background-size: cover;
+#mb-img5{
+    background-image: url('../Static/LatestEnglishAndHindi/img5.JPG');
 }
-.lr-title{
-	margin-left: 5%;
-	margin-right: 30%;
-}
-.lr-song-name{
-	font-size: 1.2rem;
-	font-family: cursive;
-	color: #FFFFFF;
-}
-.lr-song-date{
-	font-size: 0.9rem;
-	color: grey;
-}
-.lr-duration{
-	margin-top: 5px;
-}
-.lr-duration i{
-	color: #FFFFFF;
-}
-.lr-duration p{
-	color: grey;
-	font-size: 0.7rem;
-}
-
-/*>>>>>>>>>Popular Artists<<<<<<<<<*/
-#popular-artists{
-	margin-top: 5%;
-}
-#popular-artists-content{
-	/* background-color: grey; */
-	margin-top: 2%;
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-.pa{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 8%;
-	cursor: pointer;
-	transition: transform 0.3s;
-}	
-.pa a{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.pa:hover{
-	transform: scale(0.9);
-}
-
-.pa-img{
-	height: 120px;
-	width: 120px;
-	border-radius: 50%;
-	background-image: url('../Static/PopularArtists/edSheeren.JPG');
-	background-size: cover;
-	transition: box-shadow 0.3s;
-}
-.pa:hover > .pa-img{
-	box-shadow: inset 4px 4px 10px 15px rgba(0, 0, 0, 0.3);
-}
-.pa-name p{
-	font-size: 1.1rem;
-	color: #ffffffb0;
-	font-family: cursive;
-}
-
-/*>>>>>>>>>Stations<<<<<<<<<*/
-#stations-container{
-	background-color: #101642;
-	margin-right: 20px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	padding: 10px 0 10px 10px;
-}
-#stations-logo{
-	width: 150px;
-	height: 100px;
-	margin: 20px 0;
-	background-image: url('../Static/Stations/stationsLogo.JPG');
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-.st-img{
-	width: 100px;
-	height: 100px;
-	margin: 20px 0;
-	background-color: grey;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	background-size: cover;
-	transition: opacity 0.3s;
-}
-.st-img:hover{
-	opacity: 0.5;
-}
-
-.st-img p{
-	font-weight: bold;
-	font-family: cursive;
-	letter-spacing: 2px;
-	color: snow;
-	opacity: 0;
-	transition: opacity 0.3s;
-}
-.st-img:hover > p{
-	opacity: 1;
-}
-
-/* station images urls */
-#st-love{
-	background-image: url('../Static/Stations/love.JPG');
-}
-#st-retro{
-	background-image: url('../Static/Stations/retro.JPG');
-}
-#st-chill{
-	background-image: url('../Static/Stations/chill.JPG');
-}
-#st-workout{
-	background-image: url('../Static/Stations/workout.JPG');
-}
-#st-rock{
-	background-image: url('../Static/Stations/rock.JPG');
-}
-#st-pop{
-	background-image: url('../Static/Stations/pop.JPG');
-}
-
-/*>>>>>>>>>Music Types<<<<<<<<<*/
-#music-types-container{
-	margin-top: 50px;
-	display: flex;
-	justify-content: space-around;
-}
-.mt-img-container{
-	width: 30%;
-	height: 150px;
-	cursor: pointer;
-	box-shadow: 5px 7px 6px 8px rgba(0, 0, 0, 0.5);
-	background-size: cover;
-	overflow: hidden;
-}
-.mt-img p{
-	font-size: 1.5rem;
-	color: honeydew;
-	font-family: cursive;
-	letter-spacing: 2px;
-	transition: transform 0.3s;
-}
-.mt-img-container:hover > .mt-img p{
-	transform: scale(0.7);
-}
-.mt-img{
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: transform 0.3s;
-}
-.mt-img-container:hover > .mt-img{
-	transform: scale(1.2);
-}
-
-/* music types urls */
-#mt-party{
-	background-image: url('../Static/MusicTypes/party.JPG');
-}
-#mt-electronic{
-	background-image: url('../Static/MusicTypes/electronic.JPG');
-}
-#mt-roadtrip{
-	background-image: url('../Static/MusicTypes/roadtrip.JPG');
+#mb-img6{
+    background-image: url('../Static/LatestEnglishAndHindi/img6.JPG');
 }
 
 
-/*>>>>>>>>>Latest English And Hindi<<<<<<<<<*/
-#latest-english-container{
-	margin-top: 50px;
-	display: flex;
-	flex-direction: column;
-	/* background-color: grey; */
-}
-
-.le-content{
-	margin-top: 15px;
-	display: flex;
-	flex-wrap: wrap;
-	/* background-color: green; */
-	justify-content: space-around;
-}
-.le-img{
-	height: 120px;
-	width: 120px;
-	background-size: cover;
-	min-width: 80px;
-	min-height: 80px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	box-shadow: 4px 4px 7px 8px rgba(0, 0, 0, 0.3);
-}
-.le-img i{
-	visibility: hidden;
-	color: silver;
-	transform: scale(2);
-	opacity: 0.8;
-}
-.le-con{
-	cursor: pointer;
-	transition: opacity 0.3s;
-}
-.le-con:hover{
-	opacity: 0.7;
-}
-.le-con:hover > .le-img i{
-	visibility: visible;
-}
-.le-title{
-	margin-top: 10%;
-}
-.le-name{
-	color: rgba(186, 194, 194, 0.986);
-	font-size: 20px;
-	font-family: cursive;
-}
-.le-date{
-	color: rgb(92, 88, 88);
-	font-size: 12px;
-	font-family: sans-serif;
-}
-
-/* Latest Songs urls */
-.le-img-1{
-	background-image: url('../Static/LatestEnglishAndHindi/img1.JPG');
-}
-.le-img-2{
-	background-image: url('../Static/LatestEnglishAndHindi/img2.JPG');
-}
-.le-img-3{
-	background-image: url('../Static/LatestEnglishAndHindi/img3.JPG');
-}
-.le-img-4{
-	background-image: url('../Static/LatestEnglishAndHindi/img4.JPG');
-}
-.le-img-5{
-	background-image: url('../Static/LatestEnglishAndHindi/img5.JPG');
-}
-.le-img-6{
-	background-image: url('../Static/LatestEnglishAndHindi/img6.JPG');
-}
-
-
-/*##############-----------ASIDE SECTION-----------##############*/
+/* ***************-----------Aside------------************* */
 aside{
 	display: inline-block;
 	position: fixed;
 	top: 90px;
-	/*background-color: grey;*/
+	/* background-color: grey; */
 	width: 25vw;
 	height: 73vh;
 }
-aside section{
+/* *************-------Aside Top------************** */
+#aside-top{
+    height:50%;
+    /* background-color: gray; */
+}
+
+#aside-top-heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+#st-main-heading{
+    font-size: 1.8rem;
+	font-family: sans-serif;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+#view-all{
+    font-family: sans-serif;
+    color: gray;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#view-all:hover{
+    color: honeydew;
+}
+.at-tab-left{
+    display: flex;
+}
+.aside-top-tab{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.aside-top-tab:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+.at-img-thumb{
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+}
+.at-tab-title{
+    margin-left: 10px;
+}
+.at-artist-name{
+    color: white;
+	font-size: 18px;
+	font-family: cursive;
+}
+.at-band{
+    color: #939393;
+}
+.at-tab-right i, .at-tab-right p{
+    color: rgba(128, 128, 128, 0.637);
+    transform: scale(0.8);
+}
+
+/* image urls for aside top */
+.at-img-thumb{
+    background-image: url('../Static/MainContentThumbnails/image1.JPG');
+}
+
+/* *************-------Aside Bottom------************** */
+aside #aside-bottom{
 	/*background-color: grey;*/
-	height: 100%;
+	height: 50%;
 	width: 100%;
 }
 
@@ -744,7 +588,8 @@ aside section{
 .tabs{
 	margin-top: 16px;
 	width: 100%;
-	height: 12%;
+    height: 12%;
+    min-height: 60px;
 	/*background-color: grey;*/
 }
 .tabs input{
@@ -1019,7 +864,6 @@ aside section{
 	border-radius: 70px;
 }
 
-
 /*******------------------------Footer Audio---------------------*******/
 footer{
 	background-color: #191919;
@@ -1047,7 +891,7 @@ footer{
 .player-title-img{
 	height: 55px;
 	width: 55px;
-	background-image: url('../Static/AudioThumbnails/memories.JPG');
+	background-image: url('../Static/AudioThumbnails/CanWeKiss4Ever.JPG');
 	background-size: cover;
 	box-shadow: 0 0 5px 6px rgba(0, 0, 0, 0.3);
 }
@@ -1085,9 +929,11 @@ footer{
 	transform: scale(1.47);
 }
 
+
 /*media queries*/
 @media screen and (max-width: 740px){
 	main{
+        width: 80vw;
 		margin-left: 10%;
 		margin-bottom: 0;
 		/*background-color: grey;*/
@@ -1148,7 +994,15 @@ footer{
 	/* for latest english and hindi */
 	.le-con{
 		margin-bottom: 15px;
-	}
+    }
+    
+    /* for main top */
+    #main-top{
+        padding-bottom: 20px;
+    }
+    .main-top-img{
+        width: 100%;
+    }
 
 	/*for aside*/
 	aside{
@@ -1190,4 +1044,10 @@ footer{
 		margin-bottom: 10px;
 	}
 
+}
+
+@media screen and (max-width: 1200px){
+    #aside-bottom{
+        margin-top: 20%;
+    }
 }
